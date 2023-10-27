@@ -1,0 +1,50 @@
+
+function butotnClick(){
+  let checkValue = '';
+
+  for (let i = 0; i < len; i++){
+    if (boy_girl_radio.item(i).checked){
+      checkValue = boy_girl_radio.item(i).value;
+    }
+    if (cool_cute_radio.item(i).checked){
+      checkValue = cool_cute_radio.item(i).value;
+    }
+    if (up_down_radio.item(i).checked){
+      checkValue = up_down_radio.item(i).value;
+    }
+    if (sawayaka_deep_radio.item(i).checked){
+      checkValue = sawayaka_deep_radio.item(i).value;
+    }
+    if (love_not_radio.item(i).checked){
+      checkValue = love_not_radio.item(i).value;
+    }
+
+  }
+  console.log('選択されているのは ' + checkValue + ' です');
+}
+
+let boy_girl_radio = document.getElementsByName('boy-girl');
+let len = boy_girl_radio.length;
+
+let cool_cute_radio = document.getElementsByName('cool_cute');
+let len = cool_cute_radio.length;
+
+let up_down_radio = document.getElementsByName('up_down');
+let len = up_down_radio.length;
+
+let sawayaka_deep_radio = document.getElementsByName('sawayaka_deep');
+let len = sawayaka_deep_radio.length;
+
+let love_not_radio = document.getElementsByName('love_not');
+let len = love_not_radio.length;
+
+let checkButton = document.getElementById('checkButton');
+checkButton.addEventListener('click', butotnClick);
+
+var(checkValue="namuja"){
+  let str = "あああ"; // 出力文字列
+        let ary = str.split(''); // 配列形式に変換（後述のBlobで全要素出力）
+        let blob = new Blob(ary,{type:"text/plan"}); // テキスト形式でBlob定義
+        let link = document.createElement('a'); // HTMLのaタグを作成
+        link.href = <iframe width="560" height="315" src="https://www.youtube.com/embed/JsOOis4bBFg?si=dvhJ3ysJqCuafwZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>(blob);
+}
